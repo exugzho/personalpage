@@ -1,0 +1,58 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add space above the container */
+.container {
+  margin-top: 50px; /* Adjust this value for more/less space */
+}
+
+/* Center buttons and add some spacing */
+.container button,
+.controls button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  margin: 10px; /* Space between buttons */
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container button:hover,
+.controls button:hover {
+  background-color: #45a049;
+}
+
+/* Controls section spacing */
+.controls {
+  margin-top: 30px;
+}
+
+/* Recording status text */
+#recording-status {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container button,
+  .controls button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
